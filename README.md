@@ -28,7 +28,7 @@ You can open the Unity project and work on your package's files in your favorite
 You'll need to make a few changes in [release.yml](.github/workflows/release.yml):
 * Changed the `paths` property on line 7 to point to the directory where your Package's source files are. Leave the `/**` at the end so GitHub knows to run this action whenever any file in that directory is changed. In the example, this property reads: `paths: Packages/com.vrchat.demo-template/**`
 * Change the `packageName` property on line 10 to include the name of your package, like `packageName: "com.vrchat.demo-template"`
-* We highly recommend you keep the existing folder structure where the root of the project is a Unity Repo, and your packages are in the "Packages" directory, If you change this, you'll need to update the paths that assume your package is in the "Packages" directory, on lines 24, 38, 41 and 57.
+* We highly recommend you keep the existing folder structure where the root of the project is a Unity Repo, and your packages are in the "Packages" directory, If you change this, you'll need to update the paths that assume your package is in the "Packages" directory, on lines 24, 38, 39, 41, 42, 49, and 58.
 
 That's it. If you want to store and generate your web files in a folder other than "Website" in the root, you can change the `listPublicDirectory` item [here in build-listing.yml](.github/workflows/build-listing.yml#L17).
 
